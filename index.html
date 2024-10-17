@@ -195,6 +195,64 @@
       .submit_button:hover {
         background: #2c11f5;
       }
+      .footer_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #000938;
+        margin-top: 150px;
+      }
+      .footer {
+        display: flex;
+        width: 100svw;
+        justify-content: center;
+        flex-direction: row;
+        padding: 36px 0;
+      }
+      .footer_logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .footer_contact {
+        display: flex;
+        flex-direction: column;
+        margin-left: 84px;
+        align-items: flex-start;
+      }
+      .footer_office {
+        display: flex;
+        flex-direction: column;
+        margin-left: 32px;
+        align-items: flex-start;
+      }
+      @media screen and (max-width: 1055px) {
+        .footer_container {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+        .footer {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 85%;
+          /* padding: 0 15%; */
+          /* margin: 150px auto 36px; */
+        }
+        .footer_logo {
+          margin-bottom: 36px;
+        }
+        .footer_contact {
+          margin-left: 0;
+          margin-bottom: 32px;
+        }
+        .footer_office {
+          margin-left: 0;
+        }
+      }
     </style>
   </head>
 
@@ -388,31 +446,34 @@
             </div>
           </div>
         </div>
-        <div class="group4">
-          <div class="color7"></div>
-          <div class="flex_row3">
-            <div class="flex_row4">
-              <img
-                class="image11"
-                src="./assets/c3e209d0a7d6024ae5d7259d809db9e0.svg"
-                alt="alt text"
-              />
-              <img
-                class="image1"
-                src="./assets/5658203e3c987d072ca1eaaf1b5ee917.png"
-                alt="alt text"
-              />
+      </div>
+      <div class="footer_container">
+        <div class="footer">
+          <div class="footer_logo">
+            <img
+              class="image11"
+              src="./assets/c3e209d0a7d6024ae5d7259d809db9e0.svg"
+              alt="alt text"
+              style="margin-right: 8px"
+            />
+            <img
+              class="image1"
+              src="./assets/5658203e3c987d072ca1eaaf1b5ee917.png"
+              alt="alt text"
+            />
+          </div>
+
+          <div class="footer_contact">
+            <p class="highlight3" style="margin-bottom: 16px">Contact</p>
+            <div class="text22">Tel: (+84) 0901.578.748</div>
+            <div class="text22" style="margin-top: 8px">
+              an.do@terra-tech.com
             </div>
-            <div class="flex_col11">
-              <p class="highlight3">Contact</p>
-              <div class="text2">Tel: (+84) 0901.578.748</div>
-              <div class="text21">an.do@terra-tech.com</div>
-            </div>
-            <div class="flex_col12">
-              <p class="highlight3">Office</p>
-              <div class="text22">
-                39 Le Duan, Ben Nghe Ward, District 1, Ho Chi Minh City, Vietnam
-              </div>
+          </div>
+          <div class="footer_office">
+            <p class="highlight3" style="margin-bottom: 16px">Office</p>
+            <div class="text22">
+              39 Le Duan, Ben Nghe Ward, District 1, Ho Chi Minh City, Vietnam
             </div>
           </div>
         </div>
